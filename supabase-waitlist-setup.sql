@@ -1,4 +1,4 @@
--- SkinQorAI waitlist table
+-- skinqorai waitlist table
 -- Run this once in Supabase Dashboard → SQL Editor (https://supabase.com/dashboard → your project → SQL Editor)
 
 create table if not exists public.waitlist (

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SkinQorAI — Sell More Skincare</title>
+<title>skinqorai — Sell More Skincare</title>
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
 <style>
@@ -66,9 +66,10 @@ body{
 nav{
   position:fixed;top:0;width:100%;z-index:1000;
   padding:0 clamp(24px,4vw,64px);
-  height:80px;
+  height:100px;
   display:flex;align-items:center;justify-content:space-between;
   transition:all 0.5s cubic-bezier(.22,1,.36,1);
+  background:var(--bg);
 }
 
 nav.scrolled{
@@ -76,20 +77,24 @@ nav.scrolled{
   backdrop-filter:blur(20px) saturate(120%);
   -webkit-backdrop-filter:blur(20px) saturate(120%);
   border-bottom:1px solid var(--border);
-  height:64px;
+  height:80px;
 }
 
 .logo{
   display:flex;
   align-items:center;
   text-decoration:none;
+  background:transparent;
+  padding:0;
 }
 
 .logo img{
-  height:32px;
+  height:52px;
   width:auto;
   display:block;
   object-fit:contain;
+  mix-blend-mode:screen;
+  vertical-align:middle;
 }
 
 .nav-r{display:flex;align-items:center;gap:12px}
@@ -805,11 +810,12 @@ footer{
 }
 
 .ft-l img{
-  height:24px;
+  height:40px;
   width:auto;
   display:block;
   object-fit:contain;
   opacity:0.9;
+  mix-blend-mode:screen;
 }
 
 .ft-r{display:flex;gap:24px}
@@ -884,7 +890,7 @@ footer{
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="#" class="logo"><img src="assets/logo.png" alt="Skinqor AI"></a>
+  <a href="#" class="logo"><img src="assets/logo.png" alt="skinqorai"></a>
   <div class="nav-r">
     <a href="#how" class="nav-link">How It Works</a>
     <a href="#waitlist" class="nav-cta">Join Waitlist</a>
@@ -908,7 +914,7 @@ footer{
   </h1>
 
   <p class="hero-sub">
-    SkinQorAI is an AI skin analysis widget for your website.
+    skinqorai is an AI skin analysis widget for your website.
     It shows customers what their skin needs and matches them
     to the right products from your store. More items per cart.
     Higher revenue per visit.
@@ -939,7 +945,7 @@ footer{
       <div class="compare-card card-without rv rv-d1">
         <div class="card-tag">
           <span class="card-tag-line"></span>
-          Without SkinQorAI
+          Without skinqorai
         </div>
         <div class="journey">
           <div class="j-step">
@@ -969,7 +975,7 @@ footer{
       <div class="compare-card card-with rv rv-d2">
         <div class="card-tag">
           <span class="card-tag-line"></span>
-          With SkinQorAI
+          With skinqorai
         </div>
         <div class="journey">
           <div class="j-step">
@@ -978,7 +984,7 @@ footer{
           </div>
           <div class="j-step">
             <div class="j-dot"></div>
-            <div class="j-text">SkinQorAI analyzes their skin and reveals what it actually needs — <strong>dehydration, texture, sun damage.</strong></div>
+            <div class="j-text">skinqorai analyzes their skin and reveals what it actually needs — <strong>dehydration, texture, sun damage.</strong></div>
           </div>
           <div class="j-step">
             <div class="j-dot"></div>
@@ -1037,7 +1043,7 @@ footer{
       <div class="h-step rv rv-d3">
         <div class="h-step-num">03</div>
         <h3>Customers discover more, buy more</h3>
-        <p>A customer scans their face, sees what their skin needs, and discovers products they didn't know they wanted — all from your catalog. Each recommendation goes straight to Add to Cart.</p>
+        <p>A customer scans their face, sees what their skin needs, and discovers products they didn't know they wanted — all from your catalog. Each recommendation goes straight to the cart.</p>
       </div>
     </div>
   </div>
@@ -1059,7 +1065,7 @@ footer{
       <ul class="p-list rv">
         <li><span class="p-check">✓</span>Reveals skin needs the customer didn't know they had</li>
         <li><span class="p-check">✓</span>Only recommends products from your store</li>
-        <li><span class="p-check">✓</span>Each product links directly to Add to Cart</li>
+        <li><span class="p-check">✓</span>Each product links directly to the cart</li>
         <li><span class="p-check">✓</span>Fully branded to match your site</li>
         <li><span class="p-check">✓</span>Works on any device, any platform</li>
       </ul>
@@ -1165,7 +1171,7 @@ footer{
 
 <!-- FOOTER -->
 <footer>
-  <div class="ft-l"><img src="assets/logo.png" alt="Skinqor AI"></div>
+  <div class="ft-l"><img src="assets/logo.png" alt="skinqorai"></div>
   <div class="ft-r">
     <a href="#">Privacy</a>
     <a href="#">Terms</a>
